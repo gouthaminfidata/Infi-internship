@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Local Variables</title>
+
+  </head>
+  <body>
+
+      <script type="text/javascript">
+
+      function sayHello(){
+
+
+        // So, we can say that var is function-scoped.
+        // This means whenever a variable is created with var in a function,
+        // it will only exist within the function.
+
+          var me = 'Goutham';
+
+          document.write(me);
+
+      }
+
+      sayHello();
+
+      document.write(me);//ReferenceError: me is not defined
+
+      </script>
+
+
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Open the Window in the Current Page only</title>
+  </head>
+  <body>
+          <script type="text/javascript">
+              function self(){
+                    window.open("http://google.com",'_SELF');
+              }
+
+          </script>
+          <input type="button" name="button" value="Click Here" onclick="self()">
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!-- The <form> Element
+The HTML <form> element defines a form that is used to collect user input:
+
+<form>
+.
+form elements
+.
+</form>
+An HTML form contains form elements.
+
+Form elements are different types of input elements, like text fields, checkboxes, radio buttons, submit buttons, and more.
+
+The <input> Element
+The <input> element is the most important form element.
+
+The <input> element can be displayed in several ways, depending on the type attribute.
+
+Here are some examples:
+
+Type	Description
+<input type="text">	Defines a one-line text input field
+<input type="radio">	Defines a radio button (for selecting one of many choices)
+<input type="submit">	Defines a submit button (for submitting the form) -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form>
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse">
+  <br><br>
+  <input type="submit" value="Submit">
+  <br>
+
+
+  <br>
+  Gender:
+    <input type="radio" name="gender" value="male" checked> Male
+    <input type="radio" name="gender" value="female"> Female<br>
+
+<!-- The fieldset element is used to group related data in a form,
+ and the legend element defines a caption for the fieldset element -->
+    <fieldset>
+          <legend>Personal information:</legend>
+          First name:<br>
+          <input type="text" name="firstname" value="Mickey">
+          <br>
+          Last name:<br>
+          <input type="text" name="lastname" value="Mouse">
+          <br><br>
+          <input type="submit" value="Submit">
+</fieldset>
+
+
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>horizontalscroll</title>
+    <style>
+div.scrollmenu{
+  background-color: #333;
+  overflow: auto;
+  /* this means it will visible the pre text it won't give the entire content of the element
+  ex: Home contains some paragraps but it will show only home. */
+  white-space: nowrap;
+  /* this will give paragraps as it is it wont maintain any indentation .
+  if you want you can check this with white-space: normal;white-space: pre;
+   */
+
+}
+
+div.scrollmenu a{
+  display: inline-block;
+  /* display: inline-block is to display list items horizontally instead of vertically */
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  
+}
+
+    </style>
+
+  </head>
+  <body>
+      <div class="scrollmenu">
+        <a href="flipanimage.html">Home</a>
+        <a href="#products">Products</a>
+        <a href="#customers">Customers</a>
+        <a href="#services">Services</a>
+        <a href="#support">Support</a>
+        <a href="#contact us">Contact us</a>
+        <a href="about us">About us</a>
+
+
+
+      </div>
+
+  </body>
+</html>

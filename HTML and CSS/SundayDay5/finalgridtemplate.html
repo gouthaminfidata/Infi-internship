@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Final Grid Template</title>
+    <style media="screen">
+    body {
+      display: grid;
+      grid-template-areas:
+        "header header header"
+        "nav article ads"
+        "footer footer footer";
+      grid-template-rows: 80px 1fr 70px;
+      grid-template-columns: 20% 1fr 15%;
+      grid-row-gap: 10px;
+      grid-column-gap: 10px;
+      height: 100vh;
+      margin: 0;}
+
+
+      header, footer, article, nav, div {
+        padding: 1.2em;
+        /* em	Relative to the font-size of the element (2em means 2 times the size of the current font) */
+        background: powderblue;
+        }
+
+        #pageHeader {
+          grid-area: header;
+          text-align: center;
+          }
+        #pageFooter {
+          grid-area: footer;
+          }
+        #mainArticle {
+          grid-area: article;
+          }
+        #mainNav {
+          grid-area: nav;
+          }
+        #siteAds {
+          grid-area: ads;
+          }
+          /* @media all and (max-width: 575px) {
+            body {
+              grid-template-areas:
+                "header"
+                "article"
+                "ads"
+                "nav"
+                "footer";
+              grid-template-rows: 80px 1fr 70px 1fr 70px;
+              grid-template-columns: 1fr;
+           }
+         } */
+
+
+
+
+
+    </style>
+
+  </head>
+  <body>
+      <header id="pageHeader">InfiData Technologies</header>
+        <!-- <header> - Defines a header for a document or a section -->
+
+      <!-- <article> - Defines an independent self-contained article -->
+      <article id="mainArticle">Article</article>
+
+      <!-- <nav> - Defines a container for navigation links -->
+      <nav id="mainNav">Nav</nav>
+      <div id="sideAds">Ads</div>
+
+      <!-- <footer> - Defines a footer for a document or a section -->
+      <footer id="pageFooter">Footer</footer>
+  </body>
+</html>

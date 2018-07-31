@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bgimg {
+    background-image: url('/Users/Goutham/Desktop/bahubali3.jpeg');
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    /* background-size: auto|length|cover|contain|initial|inherit; */
+    position: relative;
+    /* position: static|absolute|fixed|relative|sticky|initial|inherit; */
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    /* font-family: family-name|generic-family|initial|inherit; */
+    font-size: 25px;
+}
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+</style>
+<body>
+
+<div class="bgimg">
+
+
+  <div class="topleft">
+    <p>Logo</p>
+  </div>
+
+  <div class="middle">
+    <h1>COMING SOON</h1>
+    <hr>
+    <!-- <hr> tag defines a thematic break in an HTML page (e.g. a shift of topic).
+
+The <hr> element is used to separate content (or define a change) in an HTML page. -->
+    <p>350 days left</p>
+  </div>
+
+  <div class="middle">
+    <p>Amarendra Bahubali</p>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Show Date Using Get Element By Id</title>
+  </head>
+  <body>
+        <script type="text/javascript">
+
+            function showDate(){
+              document.getElementById("container").innerHTML=Date();
+
+
+              // from the above example document.getElementById(container) gets the html node by id “container” and its inner content can be manipulated using innerHTML
+
+// Each HTML element has an innerHTML property that defines both the HTML code and the text that occurs between that element's opening and closing tag.
+// By changing an element's innerHTML after some user interaction, you can make much more interactive pages.
+
+
+            }
+          </script>
+
+            <h1 id="container">Hello Goutham</h1>
+
+          <input type="button" name="button" value="Click Here to Show The Date" onclick="showDate()">
+  </body>
+</html>
