@@ -1,0 +1,39 @@
+<!-- In JavaScript, almost "everything" is an object.
+
+Booleans can be objects (if defined with the new keyword)
+Numbers can be objects (if defined with the new keyword)
+Strings can be objects (if defined with the new keyword)
+Dates are always objects
+Maths are always objects
+Regular expressions are always objects
+Arrays are always objects
+Functions are always objects
+Objects are always objects
+All JavaScript values, except primitives, are objects.
+ -->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Creating Object using New Keyword</title>
+  </head>
+  <body>
+
+
+      <p id="demo"></p>
+      <script type="text/javascript">
+
+          var person = new Object();
+          person.firstName = "Goutham";
+          person.lastName = "Rajanna";
+          person.age = 27;
+
+
+          document.getElementById('demo').innerHTML= person.firstName + " age is " + person.age;
+
+      </script>
+
+  </body>
+</html>
